@@ -10,8 +10,14 @@ import org.springframework.cloud.config.server.EnableConfigServer;
 @EnableDiscoveryClient
 public class Configserverboot3Application {
 
-    public static void main(String[] args) {
-        SpringApplication.run(Configserverboot3Application.class, args);
+    public static void main(String[] args)
+    {
+            SpringApplication application = new SpringApplication(Configserverboot3Application.class);
+
+            // Set the active profile programmatically
+            application.setAdditionalProfiles("stag");
+
+            application.run(args);
     }
 
 }

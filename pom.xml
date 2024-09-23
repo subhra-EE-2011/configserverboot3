@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.cbt</groupId>
     <artifactId>configserverboot3</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>stag-1</version>
     <name>configserverboot3</name>
     <description>configserverboot3</description>
     <url/>
