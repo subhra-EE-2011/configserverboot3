@@ -8,16 +8,13 @@ import org.springframework.cloud.config.server.EnableConfigServer;
 @SpringBootApplication
 @EnableConfigServer
 @EnableDiscoveryClient
-public class Configserverboot3Application {
-
+public class Configserverboot3Application
+{
     public static void main(String[] args)
     {
             SpringApplication application = new SpringApplication(Configserverboot3Application.class);
-
             // Set the active profile programmatically
-            application.setAdditionalProfiles("stag");
-
+            application.setAdditionalProfiles("dev");
             application.run(args);
     }
-
 }
