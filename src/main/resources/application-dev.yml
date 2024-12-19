@@ -6,8 +6,10 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/indiagator/code22-config-server-properties.git
+          uri: https://github.com/subhra-EE-2011/microservices-config.git
           refresh-rate: 1
+          searchPaths: '{application}'
+          clone-on-start: true
   zipkin:
     base-url: http://localhost:9411
 
@@ -29,9 +31,6 @@ logging:
 
 zipkin:
   baseUrl: http://localhost:9411
-
-server:
-  port: 8888
 
 management:
   endpoints:
